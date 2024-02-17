@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./icon.png" type="image/x-icon">
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-wA+0JF3FT3stnC5T8o6/0MG9Sv67KblBoaUJ7mkuG+wx+uh9cdkr0sM8zRHTy1Fd0b2nSOUVrBHqqZQzGF2gCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="input-group mb-3">
+        <input
+          id="search-input"
+          type="text"
+          class="form-control"
+          placeholder="Enter city name"
+          aria-label="Enter city name"
+          aria-describedby="button-search"
+        />
+        <button
+          id="button-search"
+          class="btn btn-outline-secondary"
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+
+      <div id="weather-info">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              <img
+                src="weather-icon.png"
+                alt="Weather Icon"
+                class="weather-icon"
+              />Weather Information
+            </h4>
+            <ul>
+              <li>
+                <img
+                  src="./assets/temp.webp"
+                  width="30rem"
+                  height="30rem"
+                  alt="Temperature Icon"
+                />
+                <strong>Temperature:</strong> <span id="temperature"></span>°C
+              </li>
+              <li>
+                <img
+                  src="./assets/feelslike.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Feels Like Icon"
+                />
+                <strong>Feels Like:</strong> <span id="feels-like"></span>°C
+              </li>
+              <li>
+                <img
+                  src="./assets/humidity.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Humidity Icon"
+                />
+                <strong>Humidity:</strong> <span id="humidity"></span>%
+              </li>
+              <li>
+                <img
+                  src="./assets/maxtemp.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Max Temperature Icon"
+                />
+                <strong>Max Temperature:</strong> <span id="max-temp"></span>°C
+              </li>
+              <li>
+                <img
+                  src="./assets/mintemp.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Min Temperature Icon"
+                />
+                <strong>Min Temperature:</strong> <span id="min-temp"></span>°C
+              </li>
+              <li>
+                <img
+                  src="./assets/wind.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Wind Speed Icon"
+                />
+                <strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s
+              </li>
+              <li>
+                <img
+                  src="./assets/cloud.jpg"
+                  width="30rem"
+                  height="30rem"
+                  alt="Cloud Cover Icon"
+                />
+                <strong>Cloud Cover:</strong> <span id="cloud-cover"></span>%
+              </li>
+              <li>
+                <img
+                  src="./assets/sunrise.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Sunrise Icon"
+                />
+                <strong>Sunrise:</strong> <span id="sunrise-time"></span>
+              </li>
+              <li>
+                <img
+                  src="./assets/sunset.png"
+                  width="30rem"
+                  height="30rem"
+                  alt="Sunset Icon"
+                />
+                <strong>Sunset:</strong> <span id="sunset-time"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
